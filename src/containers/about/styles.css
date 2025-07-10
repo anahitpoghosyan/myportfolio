@@ -1,0 +1,178 @@
+.about {
+  height: 100%;
+}
+
+.about__me__infos {
+  display: flex;
+  color: var(--yellow-theme-main-color);
+  height: 100%;
+}
+
+.about__me,
+.about__me-frontend {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__me h3,
+.about__me-frontend h3 {
+  font-size: 3rem;
+  padding-bottom: 5px;
+}
+
+.about__me h3 {
+  color: var(--yellow-theme-main-color);
+  padding-bottom: 5px;
+}
+
+.about__me ul li {
+  list-style: none;
+  padding: 2px 0;
+  font-size: 3rem;
+}
+
+.value {
+  color: rgb(218, 216, 180);
+}
+
+.about__me-frontend {
+  padding-right: 50px;
+}
+
+.about__me-frontend p {
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+@media only screen and (max-width: 550px) {
+  .about__me__infos {
+    flex-direction: column;
+  }
+
+  .about__me,
+  .about__me-frontend {
+    width: 100%;
+    padding: 2rem;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .about__me-frontend p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .about__me h3,
+  .about__me-frontend h3 {
+    font-size: 2rem;
+    padding-bottom: 4px;
+  }
+
+  .about__me ul li {
+    list-style: none;
+    padding: 2px 0;
+    font-size: 2rem;
+  }
+
+  .wrapper h2 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 768px) {
+  .about__me__infos {
+    flex-direction: column;
+  }
+
+  .about__me,
+  .about__me-frontend {
+    width: 100%;
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about__me-frontend p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .about__me h3,
+  .about__me-frontend h3 {
+    font-size: 2rem;
+    padding-bottom: 4px;
+  }
+
+  .about__me ul li {
+    list-style: none;
+    padding: 2px 0;
+    font-size: 2rem;
+  }
+  .wrapper h2 {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+  .about__me__infos {
+    flex-direction: row;
+  }
+
+  .about__me,
+  .about__me-frontend {
+    width: 50%;
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about__me-frontend p {
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+  }
+
+  .about__me h3,
+  .about__me-frontend h3 {
+    font-size: 2.3rem;
+    padding-bottom: 4px;
+  }
+
+  .about__me ul li {
+    list-style: none;
+    padding: 2px 0;
+    font-size: 2.3rem;
+  }
+
+  .wrapper h2 {
+    font-size: 30px;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about__me__infos {
+  animation: fadeInUp 1s ease-out;
+}
+
+.about__me,
+.about__me-frontend {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about__me:hover,
+.about__me-frontend:hover {
+  transform: translateY(-5px);
+  /* box-shadow: 0 10px 20px rgba(255, 255, 0, 0.2); yellowish glow */
+}
