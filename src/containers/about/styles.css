@@ -174,5 +174,4 @@
 .about__me:hover,
 .about__me-frontend:hover {
   transform: translateY(-5px);
-  /* box-shadow: 0 10px 20px rgba(255, 255, 0, 0.2); yellowish glow */
 }
